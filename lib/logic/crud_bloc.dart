@@ -16,6 +16,7 @@ class LoadRecords extends CrudEvent {}
 
 class AddRecord extends CrudEvent {
   final String title;
+
   final File? image;
   final File? pdf;
   const AddRecord({required this.title, this.image, this.pdf});
