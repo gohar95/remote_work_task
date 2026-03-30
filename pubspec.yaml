@@ -1,0 +1,131 @@
+name: trailapp
+description: Trial App for Supabase AUTH with CRUD
+publish_to: 'none'
+
+version: 1.6.0
+
+environment:
+  sdk: '>=3.9.0 <4.0.0'
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State Management
+  flutter_bloc: ^9.1.1
+  equatable: ^2.0.5
+
+  # Networking
+  supabase_flutter: ^2.0.0
+  flutter_dotenv: ^5.1.0
+  http: ^1.1.0
+  dio: ^5.4.0
+
+  # Local Storage & Offline
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  path_provider: ^2.1.1
+  shared_preferences: ^2.2.2
+
+  # UI & Charts
+  fl_chart: ^0.65.0
+#  charts_flutter: ^0.12.0
+#  syncfusion_flutter_charts: ^24.1.41
+  shimmer: ^3.0.0
+  animate_do: ^4.2.0
+
+  # Forms & Validation
+#  flutter_form_builder: ^9.1.1
+#  form_builder_validators: ^9.1.0
+
+  # Date & Time
+#  intl: ^0.18.0
+  date_format: ^2.0.7
+
+  # File Handling
+  file_picker: ^10.3.8
+  excel: ^4.0.2
+  pdf: ^3.10.7
+  csv: ^6.0.0
+
+  # Currency & Formatting
+  currency_text_input_formatter: ^2.1.9
+  money2: ^6.0.9
+  internet_connection_checker: ^3.0.1
+  # Authentication
+  supabase: ^2.10.2
+  # Icons & Fonts
+  cupertino_icons: ^1.0.6
+  font_awesome_flutter: ^10.6.0
+
+  # Utils
+  uuid: ^4.2.2
+  url_launcher: ^6.2.2
+  connectivity_plus: ^6.1.1
+  device_info_plus: ^12.3.0
+  get_it: ^9.2.0
+  dartz: ^0.10.1
+
+  # Image & Avatar
+  cached_network_image: ^3.3.0
+  image_picker: ^1.0.5
+
+  # Notifications
+  flutter_local_notifications: ^19.5.0
+  intl: ^0.20.2
+  sqflite: ^2.4.2
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  hive_generator: ^2.0.1
+  build_runner: ^2.4.7
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - .env
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/to/resolution-aware-images
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/to/asset-from-package
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/to/font-from-package
