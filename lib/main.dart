@@ -7,11 +7,11 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
   // Load environment variables
-  await dotenv.load(fileName: ".env");
+  // await dotenv.load(fileName: ".env");
 
   await Supabase.initialize(
-    url: dotenv.env['SUPABASE_URL'] ?? '',
-    anonKey: dotenv.env['SUPABASE_ANON_KEY'] ?? '',
+    url: 'https://tpwdtjirtslndokjvcmy.supabase.co',
+    anonKey: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRwd2R0amlydHNsbmRva2p2Y215Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjcwMDY4MjAsImV4cCI6MjA4MjU4MjgyMH0.I9jqEqC2faD0SfBKjDcGrLnaLQU-VtW8nJ21cVJKVUk',
 
   );
 
